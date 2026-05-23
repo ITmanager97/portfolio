@@ -8,47 +8,72 @@
 <style>
 
 body{
-font-family:Arial,sans-serif;
 margin:0;
-padding:0;
+font-family:Arial,sans-serif;
 background:#0d1117;
 color:white;
 }
 
 header{
+padding:50px;
 text-align:center;
-padding:40px;
 background:#161b22;
 }
 
-img{
+.profile{
 width:150px;
 height:150px;
 border-radius:50%;
 object-fit:cover;
+border:3px solid #58a6ff;
 }
 
-section{
-padding:20px;
-margin:20px;
-background:#161b22;
-border-radius:10px;
-}
-
-h1,h2{
+h1{
 color:#58a6ff;
 }
 
+.container{
+padding:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:#161b22;
+padding:20px;
+margin:20px 0;
+border-radius:15px;
+}
+
+.skills span{
+display:inline-block;
+padding:10px;
+margin:5px;
+background:#21262d;
+border-radius:20px;
+}
+
+.button{
+display:inline-block;
+padding:12px 20px;
+margin:10px;
+background:#58a6ff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+}
+
 .project{
-margin-bottom:20px;
 padding:15px;
+margin-top:15px;
 background:#21262d;
 border-radius:10px;
 }
 
-a{
-color:#58a6ff;
-text-decoration:none;
+footer{
+text-align:center;
+padding:20px;
+margin-top:30px;
 }
 
 </style>
@@ -59,7 +84,7 @@ text-decoration:none;
 
 <header>
 
-<img src= "IMG_8899.jpeg"alt="Camille MASSOM">
+<img src="IMG_8899.jpeg" class="profile">
 
 <h1>Camille MASSOM</h1>
 
@@ -67,39 +92,53 @@ text-decoration:none;
 Full Stack Web Developer | IT & Cybersecurity Practitioner
 </p>
 
+<a class="button"
+href="https://github.com/itmanager97">
+GitHub
+</a>
+
+<a class="button"
+href="https://wa.me/237697159270">
+WhatsApp
+</a>
+
 </header>
 
-<section>
+<div class="container">
+
+<div class="card">
 
 <h2>About Me</h2>
 
 <p>
-Passionate about Information Technology, Web Development and Cybersecurity with practical experience in designing web platforms, database integration and security assessments.
+Passionate about Information Technology, Web Development and Cybersecurity with practical experience in building web solutions, integrating databases and performing security assessments.
 </p>
 
-</section>
+</div>
 
-<section>
+<div class="card">
 
 <h2>Technical Skills</h2>
 
-<ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>JavaScript</li>
-<li>Django</li>
-<li>Laravel</li>
-<li>PHP</li>
-<li>MySQL</li>
-<li>Kali Linux</li>
-<li>Wireshark</li>
-<li>Nmap</li>
-<li>VirtualBox</li>
-</ul>
+<div class="skills">
 
-</section>
+<span>HTML5</span>
+<span>CSS3</span>
+<span>JavaScript</span>
+<span>Django</span>
+<span>Laravel</span>
+<span>PHP</span>
+<span>MySQL</span>
+<span>Kali Linux</span>
+<span>Wireshark</span>
+<span>Nmap</span>
+<span>VirtualBox</span>
 
-<section>
+</div>
+
+</div>
+
+<div class="card">
 
 <h2>Projects</h2>
 
@@ -108,14 +147,12 @@ Passionate about Information Technology, Web Development and Cybersecurity with 
 <h3>2ComAppro</h3>
 
 <p>
-Full Stack development with frontend/backend implementation and database integration.
+Full Stack Development with frontend/backend implementation and database integration.
 </p>
 
-<p>
 <a href="https://2comappro.com">
 Visit Project
 </a>
-</p>
 
 </div>
 
@@ -124,20 +161,18 @@ Visit Project
 <h3>RaphaBio</h3>
 
 <p>
-Development and optimization of business web platform.
+Business platform development and optimization.
 </p>
 
-<p>
 <a href="https://rapha-bio.com">
 Visit Project
 </a>
-</p>
 
 </div>
 
-</section>
+</div>
 
-<section>
+<div class="card">
 
 <h2>Cybersecurity Experience</h2>
 
@@ -151,72 +186,19 @@ Visit Project
 
 <li>Vulnerability Assessment</li>
 
-<li>Pentest Methodology</li>
+<li>Pentest Methodologies</li>
 
 </ul>
 
-</section>
-
-<section>
-
-<h2>Contact</h2>
-
-<p>Email : massomcamille5@gmail.com</p>
-
-<p>WhatsApp : +237 697 159 270</p>
-
-<p>GitHub : https://github.com/ITmanager97</p>
-
-</section>
-<section>
-
-<h2>Professional Experience</h2>
-
-<div class="project">
-
-<h3>2ComAppro — Full Stack Developer</h3>
-
-<p>
-Developed frontend and backend components with database integration using HTML, CSS, JavaScript, Django, Laravel, PHP and MySQL.
-</p>
+</div>
 
 </div>
 
-<div class="project">
+<footer>
 
-<h3>RaphaBio — Web Developer</h3>
+© 2026 Camille MASSOM
 
-<p>
-Designed and optimized business web platform and digital solutions.
-</p>
+</footer>
 
-</div>
-
-<div class="project">
-
-<h3>Cybersecurity & Infrastructure Assessment</h3>
-
-<p>
-Performed security assessments for internal infrastructure, web applications and local networks using Wireshark, Nmap and Kali Linux.
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Connect with me</h2>
-
-<p>
-<a href="https://github.com/itmanager97">GitHub</a>
-</p>
-
-<p>
-<a href="https://wa.me/237697159270">WhatsApp</a>
-</p>
-
-</section>
 </body>
-
 </html>
